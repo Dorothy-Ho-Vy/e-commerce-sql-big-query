@@ -1,4 +1,4 @@
-﻿-- Big project for SQL
+-- Big project for SQL
 -- Link instruction: https://docs.google.com/spreadsheets/d/1WnBJsZXj_4FDi2DyfLH1jkWtfTridO2icWbWCh7PLs8/edit#gid=0
 
 
@@ -117,7 +117,7 @@ GROUP BY MONTH
 
 -- Query 06: Average amount of money spent per session
 #standardSQL
--- KHÁC KẾT QỦA SO VỚI ĐÁP ÁN
+-- KH�C K?T Q?A SO V?I ?�P �N
 WITH E AS 
 (SELECT 
   format_date('%Y%m',parse_date('%Y%m%d',DATE)) AS MONTH
@@ -214,3 +214,6 @@ ON VT. MONTH = ATB.MONTH
 INNER JOIN PURCHASE_TABLE AS PT
 ON ATB.MONTH = PT. MONTH 
 ORDER BY MONTH
+
+
+--add in cmt test
